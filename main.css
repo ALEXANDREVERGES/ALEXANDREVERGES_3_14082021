@@ -4,6 +4,34 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+footer {
+  color: white;
+  background-color: #252525;
+  height: 180px;
+  padding-top: 30px;
+}
+
+.foot {
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.foot h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+.foot_text {
+  margin-bottom: 10px;
+}
+
+.fa-utensils {
+  margin-right: 15px;
+}
+
+.fa-hands-helping {
+  margin-right: 8px;
+}
+
 .fonction_bouton {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +245,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  height: 1100px;
 }
 
 .restau {
