@@ -14,3 +14,24 @@
     background-color: $color-white;
     
 }
+
+@mixin chargement{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $logotitre;
+    z-index: 9999;
+    animation: loader 6s;
+    animation-fill-mode: both;
+}
+@mixin chargement-lettre{
+    color: $color-primary;
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}

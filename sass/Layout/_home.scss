@@ -1,0 +1,8 @@
+.loader{
+    @include chargement;
+}
+
+.lettre{
+    @include chargement-lettre;
+}
+
