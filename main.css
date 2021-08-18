@@ -524,11 +524,11 @@ h2 {
   background-color: #99e2d0;
   position: absolute;
   left: 20px;
-  bottom: 190px;
+  bottom: 250px;
 }
 
-.menu_entrées_fricassée {
-  margin-top: 20px;
+.menu_carte_info {
+  margin-left: 20px;
 }
 
 .menu_titre_plats {
@@ -543,6 +543,47 @@ h2 {
   position: absolute;
   left: 20px;
   bottom: -10px;
+}
+
+.menu_carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 90%;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
+}
+
+.menu_entrées {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu_text {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.menu_prix {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
