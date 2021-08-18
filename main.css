@@ -1,14 +1,38 @@
 @-webkit-keyframes loader {
-  90% {
-    opacity: 0;
-    z-index: -10;
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  33% {
+    opacity: 0.5;
+    z-index: 9999;
+  }
+  66% {
+    opacity: 0.5;
+    z-index: 9999;
+  }
+  100% {
+    opacity: 1;
+    z-index: 9999;
   }
 }
 
 @keyframes loader {
-  90% {
-    opacity: 0;
-    z-index: -10;
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  33% {
+    opacity: 0.5;
+    z-index: 9999;
+  }
+  66% {
+    opacity: 0.5;
+    z-index: 9999;
+  }
+  100% {
+    opacity: 1;
+    z-index: 9999;
   }
 }
 
@@ -82,6 +106,16 @@
   }
 }
 
+.reservation_search_bouton:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.fonction_bouton:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -132,8 +166,8 @@ footer {
           align-items: center;
   font-family: "Shrikhand", cursive;
   z-index: 9999;
-  -webkit-animation: loader 6s;
-          animation: loader 6s;
+  -webkit-animation: loader 5s;
+          animation: loader 5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -147,7 +181,7 @@ footer {
 
 .lettre {
   color: #9356DC;
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   -webkit-animation: flash 1.2s linear infinite;
@@ -216,9 +250,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 30px;
   border: 1px solid transparent;
   width: 90%;
@@ -251,13 +282,11 @@ footer {
 .fonction_bouton_icons {
   color: #777777;
   font-size: 150%;
-  position: relative;
-  left: -8%;
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .fonction_bouton_info {
-  position: relative;
-  left: -15%;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
@@ -266,8 +295,10 @@ footer {
   width: 90%;
   height: 230px;
   margin-bottom: 20px;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
   background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
 }
 
 .restaurants_carte-img {
@@ -294,15 +325,15 @@ footer {
           align-items: center;
   font-family: "Shrikhand", cursive;
   z-index: 9999;
-  -webkit-animation: loader 6s;
-          animation: loader 6s;
+  -webkit-animation: loader 5s;
+          animation: loader 5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
 .lettre {
   color: #9356DC;
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   -webkit-animation: flash 1.2s linear infinite;
@@ -323,7 +354,14 @@ header {
 }
 
 .header_logo {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  font-family: "Shrikhand", cursive;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .adresse {
@@ -387,7 +425,10 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 30px;
+}
+
+.reservation_info_plus span {
+  width: 80%;
 }
 
 .reservation_search {
@@ -399,6 +440,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100px;
+  padding-top: 30px;
 }
 
 .reservation_search_bouton {
@@ -414,7 +456,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 70%;
+  width: 250px;
   height: 50px;
   color: white;
   background-color: #9356dc;
@@ -423,10 +465,8 @@ header {
   box-shadow: 4px 8px 12px 4px rgba(0, 0, 0, 0.26);
 }
 
-.fonction h1 {
-  position: relative;
-  left: -20%;
-  margin-bottom: 50px;
+h2 {
+  margin-left: 20px;
 }
 
 .fonction {
@@ -494,8 +534,126 @@ header {
   margin-top: -15px;
 }
 
+.restaurants_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .restaurants_carte-icon {
   position: absolute;
-  right: 10%;
+  right: 8%;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fonction {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fonction_bouton {
+    width: 30%;
+    margin-left: 15px;
+  }
+  .restaurants {
+    height: 550px;
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .restaurants_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 97%;
+  }
+  .restaurants_carte {
+    width: 40%;
+    margin-right: 30px;
+  }
+  .restaurants_carte-icon {
+    position: static;
+    width: 32px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .fonction {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fonction_bouton {
+    width: 30%;
+    margin-left: 15px;
+  }
+  .restaurants {
+    height: 550px;
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .restaurants_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 97%;
+  }
+  .restaurants_carte {
+    width: 40%;
+    margin-right: 30px;
+  }
+  .restaurants_carte-icon {
+    position: static;
+    width: 32px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 2000px) {
+  .fonction {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fonction_bouton {
+    width: 30%;
+    margin-left: 25px;
+  }
+  .restaurants {
+    height: 550px;
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .restaurants_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 97%;
+  }
+  .restaurants_carte {
+    width: 40%;
+    margin-right: 30px;
+  }
+  .restaurants_carte-icon {
+    position: static;
+    width: 32px;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

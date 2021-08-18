@@ -1,8 +1,5 @@
-.fonction h1{
-    position: relative;
-    left: -20%;
-    
-    margin-bottom: 50px;
+h2{
+    margin-left: 20px;
 }
 .fonction{   
     display: flex;
@@ -44,9 +41,14 @@
     padding-bottom: 30px;
     margin-top: -15px;
 }
+.restaurants_info{
+    display: flex;
+    
+}
 
 .restaurants_carte-icon{
     position: absolute;
-    right: 10%;
+    right: 8%;
+    margin-top: 10px;
     
 }

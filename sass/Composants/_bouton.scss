@@ -1,7 +1,6 @@
 .fonction_bouton{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;    
     margin-bottom: 30px;
     border: 1px solid transparent;
     width: 90%;
@@ -27,12 +26,10 @@
 .fonction_bouton_icons{
     color: rgb(119, 119, 119);
     font-size: 150%;
-    position: relative;
-    left: -8%;
+    display: inline-block;
+    margin-right: 15px;
 }
-.fonction_bouton_info{
-    position: relative;
-    left: -15%;
+.fonction_bouton_info{   
     font-weight: bold;
     font-family: $police-principale;
 }

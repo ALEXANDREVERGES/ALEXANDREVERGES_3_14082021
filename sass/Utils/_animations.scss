@@ -1,7 +1,20 @@
+
 @keyframes loader {
-    90% {
-      opacity: 0;
-      z-index: -10;
+    0% {
+      opacity: 1;
+      z-index: 9999;
+    }
+    33%{
+        opacity: 0.5;
+        z-index: 9999;
+    }
+    66%{
+        opacity: 0.5;
+        z-index: 9999;
+    }
+    100%{
+        opacity: 1;
+        z-index: 9999;
     }
   } 
 .lettre:nth-child(1){
@@ -41,4 +54,12 @@
         color: $color-secondary;
         text-shadow: 0 0 7px $color-secondary;
     }
+}
+.reservation_search_bouton:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.fonction_bouton:hover{
+    cursor: pointer;
+    opacity: 0.6;
 }

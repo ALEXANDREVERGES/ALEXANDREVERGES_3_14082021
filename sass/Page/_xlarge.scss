@@ -1,0 +1,33 @@
+@media screen and (min-width: 1401px) and (max-width: 2000px){
+    .fonction{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .fonction_bouton{
+        width: 30%;
+        margin-left: 25px;
+    }
+    .restaurants{        
+        height: 550px;        
+        column-count: 2;
+    }
+    .restaurants_info{
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+    }
+    .restaurants_carte{
+        
+        width: 40%;
+        margin-right: 30px;
+    }
+   
+    .restaurants_carte-icon{
+       position: static;
+       width: 32px;
+       margin-top: 10px;
+    }
+ 
+   
+    
+}
