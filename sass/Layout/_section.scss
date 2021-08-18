@@ -76,12 +76,24 @@ h2{
     margin-top: -70px;
     border-radius: 40px 40px 0px 0px;
     position: relative;
+    height: 1150px;
+    
+    
+}
+.menu_lanote{
+    background-color: rgb(247, 245, 245);
+    margin-top: -70px;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    height: 1220px;
     
     
 }
 .menu_titre_entrées{
-    margin-left: 20px;
-    
+    margin-left: 20px;   
+}
+.menu_titre_entrées-lanote{
+    margin-left: 20px;   
 }
 .menu_titre_entrées::after{
     content: "";
@@ -90,13 +102,27 @@ h2{
     background-color: #99e2d0;
     position: absolute;
     left: 20px;
-    bottom: 250px;   
+    bottom: 1030px;   
+}
+.menu_titre_entrées-lanote::after{
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 20px;
+    bottom: 1100px;   
 }
 .menu_carte_info{
     margin-left: 20px;
 }
 .menu_titre_plats{
     margin-left: 20px;
+   padding-top: 30px;
+}
+.menu_titre_plats-lanote{
+    margin-left: 20px;
+   padding-top: 30px;
 }
 .menu_titre_plats::after{
     content: "";
@@ -105,7 +131,17 @@ h2{
     background-color: #99e2d0;
     position: absolute;
     left: 20px;
-    bottom: -10px;
+    bottom: 730px;
+      
+}
+.menu_titre_plats-lanote::after{
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 20px;
+    bottom: 715px;
       
 }
 .menu_carte{
@@ -115,6 +151,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .menu_text{
     font-weight: bold;
@@ -125,4 +162,64 @@ h2{
     margin-top: 20px;
     margin-right: 20px;
     
+}
+.menu_text_info{
+    margin-top: 30px;
+}
+.menu_plats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.menu_desserts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.menu_titre_desserts{
+    margin-left: 20px;
+}
+.menu_titre_desserts::after{
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 20px;
+    bottom: 425px;     
+}
+.menu_titre_desserts-lanote{
+    margin-left: 20px;
+}
+.menu_titre_desserts-lanote::after{
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 20px;
+    bottom: 410px;
+      
+}
+.menu_commander{
+    display: flex;
+    justify-content: center;
+}
+.menu_commander_bouton{
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    color: $color-white;
+    background-color: #9356dc;
+    background-image: linear-gradient(350deg, #9356dc 20%, #ff79da 100%);
+    -webkit-box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26); 
+    box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26);  
+    margin-bottom: 50px;  
 }
