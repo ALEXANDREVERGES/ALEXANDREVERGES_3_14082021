@@ -26,9 +26,10 @@
     justify-content: center;
     align-items: center;
     font-family: $logotitre;
-    z-index: 9999;
-    animation: loader 5s;
-    animation-fill-mode: both;
+    z-index: -50;
+    animation: loader 3s ;
+
+   
 }
 @mixin chargement-lettre{
     color: $color-primary;
@@ -36,4 +37,9 @@
     letter-spacing: 15px;
     margin-bottom: 150px;
     animation: flash 1.2s linear infinite;
+}
+@mixin menu-img{
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
 }

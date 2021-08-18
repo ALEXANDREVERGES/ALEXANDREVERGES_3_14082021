@@ -74,6 +74,19 @@ header{
     -webkit-box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26); 
     box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26);    
 }
+
+.header_menu{
+    display: flex;
+    width: 80%;
+    align-items: center; 
+    justify-content: flex-start
+   
+}
+.header_logo_menu{
+    margin-left: 20%;
+    font-family: $logotitre;
+}
+
                         
                       
                         
