@@ -152,10 +152,40 @@
           box-shadow: none;
 }
 
+#menu_slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: -200px;
+  width: 20%;
+  height: 60px;
+  background: #78e6dc;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_carte:hover #menu_slide {
+  -webkit-transition: 1s;
+  transition: 1s;
+  right: 0;
+}
+
+.fa-check-circle {
+  font-size: 30px;
+  color: white;
+}
+
 .container .icon path {
   fill: white;
   stroke: black;
-  stroke-width: 20px;
+  stroke-width: 10px;
 }
 
 .container svg {
@@ -304,6 +334,7 @@ footer {
 }
 
 .restaurants_carte {
+  position: relative;
   width: 90%;
   height: 230px;
   margin-bottom: 20px;
@@ -311,6 +342,9 @@ footer {
   background-color: white;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .restaurants_carte-img {
@@ -656,6 +690,7 @@ h2 {
 }
 
 .menu_carte_info {
+  text-overflow: ellipsis;
   margin-left: 20px;
 }
 
@@ -707,6 +742,8 @@ h2 {
   margin-bottom: 5px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  position: relative;
+  overflow: hidden;
 }
 
 .menu_entrées {
@@ -722,6 +759,7 @@ h2 {
 }
 
 .menu_text {
+  text-overflow: ellipsis;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -733,7 +771,14 @@ h2 {
 }
 
 .menu_text_info {
-  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
 }
 
 .menu_plats {

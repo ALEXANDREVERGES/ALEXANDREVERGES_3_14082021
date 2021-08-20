@@ -108,6 +108,7 @@ h2{
     bottom: 1100px;   
 }
 .menu_carte_info{
+    text-overflow: ellipsis;       
     margin-left: 20px;
 }
 .menu_titre_plats{
@@ -148,6 +149,7 @@ h2{
     margin-bottom: 30px;
 }
 .menu_text{
+    text-overflow: ellipsis;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -158,7 +160,12 @@ h2{
     
 }
 .menu_text_info{
-    margin-top: 30px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
+    height: 20px;
 }
 .menu_plats{
     display: flex;
