@@ -1,0 +1,39 @@
+.container .icon path{
+    fill: white;
+    
+    stroke: black;
+    stroke-width: 20px;
+    
+}
+.container svg{
+    width: 30px;
+    height: 30px;
+}
+
+.container .icon.heart:hover path{
+    animation: animate-heart 0.5s linear forwards;
+}
+@keyframes animate-heart{
+    0%{
+        stroke-dashoffset: 0;
+        fill:transparent;
+        stroke:black;
+    }
+    40%{
+        stroke-dashoffset: 0;
+        fill:transparent;
+        stroke:black;
+    }
+    80%{
+        stroke-dashoffset: 2800;
+        fill:$color-primary;
+        background-image: $color-secondary;
+        stroke: white;
+    }
+    100%{
+        stroke-dashoffset: 2800;
+        fill:$color-secondary;
+        background-image: $color-secondary;
+        stroke: white;
+    }
+}

@@ -152,6 +152,72 @@
           box-shadow: none;
 }
 
+.container .icon path {
+  fill: white;
+  stroke: black;
+  stroke-width: 20px;
+}
+
+.container svg {
+  width: 30px;
+  height: 30px;
+}
+
+.container .icon.heart:hover path {
+  -webkit-animation: animate-heart 0.5s linear forwards;
+          animation: animate-heart 0.5s linear forwards;
+}
+
+@-webkit-keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: black;
+  }
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: black;
+  }
+  80% {
+    stroke-dashoffset: 2800;
+    fill: #9356DC;
+    background-image: #FF79DA;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 2800;
+    fill: #FF79DA;
+    background-image: #FF79DA;
+    stroke: white;
+  }
+}
+
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: black;
+  }
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke: black;
+  }
+  80% {
+    stroke-dashoffset: 2800;
+    fill: #9356DC;
+    background-image: #FF79DA;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 2800;
+    fill: #FF79DA;
+    background-image: #FF79DA;
+    stroke: white;
+  }
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -511,12 +577,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.restaurants_carte-icon {
-  position: absolute;
-  right: 8%;
-  margin-top: 10px;
 }
 
 .restaurants_a {
