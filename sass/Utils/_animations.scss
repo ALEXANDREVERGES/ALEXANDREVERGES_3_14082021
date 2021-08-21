@@ -118,4 +118,47 @@
     font-size: 30px;
     color: $color-white;
 }
-
+.menu_carte-delay1{
+    animation: apparition 1s;
+}
+.menu_carte-delay2{
+    animation: apparition 1s;
+    animation-delay: 0.2s;
+}
+.menu_carte-delay3{
+    animation: apparition 1s;
+    animation-delay: 0.3s;
+}
+.menu_carte-delay4{
+    animation: apparition 1s;
+    animation-delay: 0.4s;
+}
+.menu_carte-delay5{
+    animation: apparition 1s;
+    animation-delay: 0.5s;
+}
+.menu_carte-delay6{
+    animation: apparition 1s;
+    animation-delay: 0.6s;
+}
+.menu_carte-delay7{
+    animation: apparition 1s;
+    animation-delay: 0.7s;
+}
+.menu_carte-delay8{
+    animation: apparition 1s;
+    animation-delay: 0.8s;
+}
+.menu_carte-delay9{
+    animation: apparition 1s;
+    animation-delay: 0.9s;
+}
+@keyframes apparition{
+    0%{
+        transform: scale(0);
+    }
+  
+    100%{
+        transform: scale(1);
+    }
+}
