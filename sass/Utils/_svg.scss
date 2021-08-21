@@ -5,12 +5,29 @@
     stroke-width: 10px;
     
 }
+.container_menu .icon path{
+    fill: white;
+    
+    stroke: black;
+    stroke-width: 10px;
+    
+}
+
 .container svg{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+}
+.container_menu svg{
     width: 30px;
     height: 30px;
 }
 
 .container .icon.heart:hover path{
+    animation: animate-heart 0.5s linear forwards;
+}
+.container_menu .icon.heart:hover path{
     animation: animate-heart 0.5s linear forwards;
 }
 @keyframes animate-heart{

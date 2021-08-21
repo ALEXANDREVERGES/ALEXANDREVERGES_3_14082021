@@ -26,8 +26,79 @@
        position: static;
        width: 32px;
        margin-top: 10px;
+    }   
+}
+@media screen and (min-width: 1025px){
+    .menu_all{
+        display: block;
+        column-count: 3;
+        height: 300px;
     }
-
-   
-    
+    .menu_all-lanote{
+        display: block;
+        column-count: 3;
+        height: 480px;
+    }
+    .menu{
+        height: auto;
+    }
+    .menu_titre_desserts::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: rgb(247, 245, 245);
+        position: absolute;
+        left: 1040px;
+        bottom: 585px;     
+    }
+    .menu_titre_plats::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: rgb(247, 245, 245);
+        position: absolute;
+        left: 35%;
+        bottom: 585px;
+          
+    }
+    .menu_titre_entrées::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: rgb(247, 245, 245);
+        position: absolute;
+        left: 20px;
+        bottom: 585px;   
+    }
+    .menu_plats{
+        margin-bottom: 100px;
+    }
+    .menu_titre_desserts-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: rgb(247, 245, 245);
+        position: absolute;
+        left: 1040px;
+        bottom: 585px;     
+    }
+    .menu_titre_plats-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: rgb(247, 245, 245);
+        position: absolute;
+        left: 35%;
+        bottom: 585px;
+          
+    }
+    .menu_titre_entrées-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: rgb(247, 245, 245);
+        position: absolute;
+        left: 20px;
+        bottom: 585px;   
+    }
 }

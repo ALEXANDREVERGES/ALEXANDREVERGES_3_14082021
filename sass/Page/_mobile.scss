@@ -27,7 +27,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 377px){
     .menu_titre h1{
-        font-size: 25px;
+        font-size: 23px;
     }
     .menu_lanote{
         .menu_titre h1{
@@ -41,7 +41,7 @@
         background-color: #99e2d0;
         position: absolute;
         left: 20px;
-        bottom: 1045px;   
+        bottom: 1050px;   
     }
     .menu_titre_entrées-lanote::after{
         content: "";
@@ -80,7 +80,7 @@
         background-color: #99e2d0;
         position: absolute;
         left: 20px;
-        bottom: 440px;     
+        bottom: 445px;     
     }
     .menu_titre_desserts-lanote::after{
         content: "";
@@ -92,11 +92,14 @@
         bottom: 440px;     
     }
 }
-@media screen and (min-width: 378px) and (max-width: 402px){
+@media screen and (min-width: 378px) and (max-width: 413px){
     .menu_lanote{
         .menu_titre h1{
-            font-size: 27px;
+            font-size: 25px;
         }
+    }
+    .menu_titre h1{
+        font-size: 23px;
     }
     .menu_titre_entrées-lanote::after{
         content: "";
@@ -107,7 +110,7 @@
         left: 20px;
         bottom: 1110px;   
     }
-.menu_titre_plats-lanote::after{
+    .menu_titre_plats-lanote::after{
         content: "";
         width: 3rem;
         height: .25rem;
@@ -117,7 +120,7 @@
         bottom: 725px;
           
     }
-.menu_titre_desserts-lanote::after{
+    .menu_titre_desserts-lanote::after{
         content: "";
         width: 3rem;
         height: .25rem;
@@ -126,6 +129,35 @@
         left: 20px;
         bottom: 420px;     
     }
+    .menu_titre_entrées::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 20px;
+        bottom: 1050px;   
+    }
+    .menu_titre_plats::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 20px;
+        bottom: 745px;
+          
+    }
+    .menu_titre_desserts::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 20px;
+        bottom: 445px;     
+    }
+   
 
 }
 
