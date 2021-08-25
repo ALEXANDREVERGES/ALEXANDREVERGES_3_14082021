@@ -185,60 +185,62 @@
 .menu_carte-delay1 {
   -webkit-animation: apparition 1s;
           animation: apparition 1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .menu_carte-delay2 {
-  -webkit-animation: apparition 1.2s;
-          animation: apparition 1.2s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
 .menu_carte-delay3 {
-  -webkit-animation: apparition 1.3s;
-          animation: apparition 1.3s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
 .menu_carte-delay4 {
-  -webkit-animation: apparition 1.4s;
-          animation: apparition 1.4s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
 .menu_carte-delay5 {
-  -webkit-animation: apparition 1.5s;
-          animation: apparition 1.5s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
 .menu_carte-delay6 {
-  -webkit-animation: apparition 1.6s;
-          animation: apparition 1.6s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
 .menu_carte-delay7 {
-  -webkit-animation: apparition 1.7s;
-          animation: apparition 1.7s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
 .menu_carte-delay8 {
-  -webkit-animation: apparition 1.8s;
-          animation: apparition 1.8s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
 .menu_carte-delay9 {
-  -webkit-animation: apparition 1.9s;
-          animation: apparition 1.9s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
@@ -254,10 +256,17 @@
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -265,10 +274,17 @@
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -287,7 +303,7 @@
 .container .icon path {
   fill: white;
   stroke: black;
-  stroke-width: 10px;
+  stroke-width: 20px;
 }
 
 .container_menu .icon path {
