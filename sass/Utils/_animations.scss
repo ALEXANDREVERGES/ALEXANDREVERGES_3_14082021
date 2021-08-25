@@ -122,36 +122,40 @@
     animation: apparition 1s;
 }
 .menu_carte-delay2{
-    animation: apparition 1s;
+    animation: apparition 1.2s;
     animation-delay: 0.2s;
 }
 .menu_carte-delay3{
-    animation: apparition 1s;
+    animation: apparition 1.3s;
     animation-delay: 0.3s;
 }
 .menu_carte-delay4{
-    animation: apparition 1s;
+    animation: apparition 1.4s;
     animation-delay: 0.4s;
 }
 .menu_carte-delay5{
-    animation: apparition 1s;
+    animation: apparition 1.5s;
     animation-delay: 0.5s;
 }
 .menu_carte-delay6{
-    animation: apparition 1s;
+    animation: apparition 1.6s;
     animation-delay: 0.6s;
 }
 .menu_carte-delay7{
-    animation: apparition 1s;
+    animation: apparition 1.7s;
     animation-delay: 0.7s;
 }
 .menu_carte-delay8{
-    animation: apparition 1s;
+    animation: apparition 1.8s;
     animation-delay: 0.8s;
 }
 .menu_carte-delay9{
-    animation: apparition 1s;
+    animation: apparition 1.9s;
     animation-delay: 0.9s;
+}
+.menu_carte-delay10{
+    animation: apparition 1s;
+    animation-delay: 1s;
 }
 @keyframes apparition{
     0%{
@@ -161,4 +165,12 @@
     100%{
         transform: scale(1);
     }
+}
+.menu_carte:hover .fa-check-circle{
+    transform: rotate(360deg);
+
+}
+.menu_carte .fa-check-circle{
+    transform: rotate(0);
+    transition-duration: 0.5s;
 }

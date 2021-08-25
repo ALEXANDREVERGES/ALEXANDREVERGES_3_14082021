@@ -85,10 +85,18 @@
 }
 .menu_carte_info{
     text-overflow: ellipsis;       
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .menu_carte{
    @include menu-carte;
+   align-items: center;
+   justify-content: center;
+  
+}
+.menu_entrées_carte{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
 }
 .menu_entrées{
     display: flex;
@@ -102,18 +110,16 @@
     margin-bottom: 5px;
 }
 .menu_prix{
-    font-weight: bold;
-    margin-top: 20px;
-    margin-right: 20px;
-    
-}
-.menu_text_info{
     display: flex;
-    position: relative;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.menu_text_info{       
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;  
-    height: 20px;
+    margin: 0;
 }
 .menu_plats{
     display: flex;
