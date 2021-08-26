@@ -119,62 +119,67 @@
     color: $color-white;
 }
 .menu_carte-delay1{
-    animation: apparition 1s;
+    
+    animation: apparition 1s ;
     animation-delay: 0.1s;
+    animation-fill-mode: forwards;
     
 }
 .menu_carte-delay2{
     animation: apparition 1s;
     animation-delay: 0.2s;
-    
+    animation-fill-mode: forwards;
     
 }
 .menu_carte-delay3{
     animation: apparition 1s;
     animation-delay: 0.3s;
+    animation-fill-mode: forwards;
    
     
 }
 .menu_carte-delay4{
     animation: apparition 1s;
     animation-delay: 0.4s;
+    animation-fill-mode: forwards;
     
     
 }
 .menu_carte-delay5{
     animation: apparition 1s;
     animation-delay: 0.5s;
-    
+    animation-fill-mode: forwards;
+
     
 }
 .menu_carte-delay6{
     animation: apparition 1s;
     animation-delay: 0.6s;
-    
+    animation-fill-mode: forwards;
     
 }
 .menu_carte-delay7{
     animation: apparition 1s;
     animation-delay: 0.7s;
-    
+    animation-fill-mode: forwards;
     
 }
 .menu_carte-delay8{
     animation: apparition 1s;
     animation-delay: 0.8s;
-    
+    animation-fill-mode: forwards;
    
 }
 .menu_carte-delay9{
     animation: apparition 1s;
     animation-delay: 0.9s;
-    
+    animation-fill-mode: forwards;
    
 }
 .menu_carte-delay10{
     animation: apparition 1s;
     animation-delay: 1s;
-    
+    animation-fill-mode: forwards;
     
 }
 @keyframes apparition{
