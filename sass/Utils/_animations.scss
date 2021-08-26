@@ -98,7 +98,7 @@
     opacity: 0.8;
     box-shadow: none;
 }
-#menu_slide {
+.menu_slide {
     display: flex;
     position: absolute;
     right: -200px;
@@ -110,7 +110,7 @@
     align-items: center;
 }
 
-.menu_carte:hover #menu_slide {
+.menu_carte:hover .menu_slide {
     transition: 1s;
     right: 0;
 }
