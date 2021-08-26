@@ -136,7 +136,7 @@
 
 .restaurants_carte:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.9;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
