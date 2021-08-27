@@ -47,7 +47,25 @@ h2{
 }
 
 .restaurants_a{
+    position: relative;
     font-family: $police-principale;
     color: black;
     text-decoration: none;
 }
+.restaurants_etiquette{
+    display: flex;
+    position: absolute;
+    font-weight: bold;
+    color: rgb(12, 107, 12);
+    z-index: 1;
+    right: 20px;
+    top: -130px;
+    background-color:rgb(120, 230, 220);
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+
+}
+
