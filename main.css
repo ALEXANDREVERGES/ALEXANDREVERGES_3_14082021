@@ -80,7 +80,6 @@
   100% {
     color: #FF79DA;
     text-shadow: 0 0 7px #FF79DA;
-    display: none;
   }
 }
 
@@ -96,7 +95,6 @@
   100% {
     color: #FF79DA;
     text-shadow: 0 0 7px #FF79DA;
-    display: none;
   }
 }
 
@@ -536,8 +534,6 @@ footer {
           animation: loader .01s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
   -webkit-animation-fill-mode: both;
@@ -704,7 +700,17 @@ header {
 }
 
 .header_logo_menu {
-  margin-left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Shrikhand", cursive;
 }
 
@@ -956,9 +962,9 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu_text_info {
