@@ -43,13 +43,12 @@
     80%{
         stroke-dashoffset: 2800;
         fill:$color-primary;
-        background-color: $color-secondary;
         stroke: white;
     }
     100%{
         stroke-dashoffset: 2800;
         fill:$color-secondary;
-        background-color: $color-secondary;
+        color: $color-secondary;
         stroke: white;
     }
 }

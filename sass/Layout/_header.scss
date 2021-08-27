@@ -61,7 +61,7 @@ header{
 }
 .reservation_search_bouton{
     display: flex;
-    border: 1px solid transparent;
+    
     border-radius: 30px;
     font-weight: bold;
     align-items: center;
@@ -70,8 +70,8 @@ header{
     width: 250px;
     height: 50px;
     color: $color-white;
-    background-color: #9356dc;
-    background-image: linear-gradient(350deg, #9356dc 20%, #ff79da 100%);
+    background: rgb(155,89,220);
+    background: linear-gradient(0deg, rgba(155,89,220,1) 0%, rgba(255,121,218,1) 85%);
     -webkit-box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26); 
     box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26);    
 }

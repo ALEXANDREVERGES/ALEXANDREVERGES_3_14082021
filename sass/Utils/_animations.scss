@@ -38,7 +38,7 @@
 .lettre:nth-child(8){
     animation-delay: 0.8s;
 }
-  @keyframes flash{
+@keyframes flash{
     0%{
         color: $color-secondary;
         text-shadow: 0 0 7px $color-secondary;
@@ -54,50 +54,6 @@
     }
 }
 
-.reservation_search_bouton:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    box-shadow: none;
-
-    
-}
-.fonction_bouton:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    box-shadow: none;
-    background-color: #9356dc;
-    background-image: linear-gradient(350deg, #9356dc 20%, #ff79da 100%);
-    color: white;
-    .fa-mobile-alt{
-        color: white;
-    }
-    .fa-list{
-        color: white;
-    }
-    .fa-store{
-        color: white;
-    }
-    .fonction_bouton_numero{
-        background-color: black;
-        color: $color-white;
-        
-    }
-}
-
-.restaurants_carte:hover{
-    cursor: pointer;
-    opacity: 0.9;
-    box-shadow: none;
-}
-
-.contact-zoom:hover{
-    font-size: 20px;
-}
-.menu_commander_bouton:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    box-shadow: none;
-}
 .menu_slide {
     display: flex;
     position: absolute;
@@ -162,13 +118,13 @@
   }
   @keyframes reduction{
       0%{
-          width: 70%;
+          width: 80%;
       }
       50%{
-          width: 50%;
+          width: 60%;
       }
       100%{
-          width: 50%;
+          width: 60%;
       }
   }
 .menu_carte-delay1{
@@ -256,7 +212,7 @@
         transform: translateX(-120%);
     }
     50%{
-        transform: translateX(-195%);
+        transform: translateX(-150%);
     }
     100%{
         transform: translateX(-195%);

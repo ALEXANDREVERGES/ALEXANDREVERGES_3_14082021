@@ -1,3 +1,48 @@
+.reservation_search_bouton{
+    display: flex;   
+    border-radius: 30px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    color: $color-white;
+    background: rgb(155,89,220);
+    background: linear-gradient(0deg, rgba(155,89,220,1) 0%, rgba(255,121,218,1) 85%);
+    -webkit-box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26); 
+    box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26);    
+}
+.reservation_search_bouton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: none;
+
+    
+}
+.fonction_bouton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: none;
+    background: rgb(155,89,220);
+    background: linear-gradient(0deg, rgba(155,89,220,1) 0%, rgba(255,121,218,1) 85%);
+    border: none;
+    color: white;
+    .fa-mobile-alt{
+        color: white;
+    }
+    .fa-list{
+        color: white;
+    }
+    .fa-store{
+        color: white;
+    }
+    .fonction_bouton_numero{
+        background-color: black;
+        color: $color-white;
+        
+    }
+}
 .fonction_bouton_container{
     display: flex;
     width: 100%;
@@ -40,4 +85,29 @@
 .fonction_bouton_info{   
     font-weight: bold;
     font-family: $police-principale;
+}
+.menu_commander{
+    display: flex;
+    justify-content: center;
+}
+.menu_commander_bouton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: none;
+    border: none;
+}
+.menu_commander_bouton{
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    color: $color-white;
+    background: rgb(155,89,220);
+    background: linear-gradient(0deg, rgba(155,89,220,1) 0%, rgba(255,121,218,1) 85%);
+    -webkit-box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26); 
+    box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.26);  
+    margin-bottom: 50px;  
 }
