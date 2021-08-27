@@ -262,11 +262,4 @@
         transform: translateX(-195%);
     }
 }
-.menu_carte:hover .fa-check-circle{
-    transform: rotate(360deg);
 
-}
-.menu_carte .fa-check-circle{
-    transform: rotate(0);
-    transition-duration: 0.5s;
-}
