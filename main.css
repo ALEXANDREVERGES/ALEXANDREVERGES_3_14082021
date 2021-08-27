@@ -155,24 +155,56 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: -200px;
+  right: 0px;
   width: 20%;
   height: 60px;
   background: #78e6dc;
-  -webkit-transition: 1s;
-  transition: 1s;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 .menu_carte:hover .menu_slide {
-  -webkit-transition: 1s;
-  transition: 1s;
   right: 0;
+  -webkit-animation: scale-x 1s 0ms linear both;
+          animation: scale-x 1s 0ms linear both;
+}
+
+@-webkit-keyframes scale-x {
+  0% {
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@keyframes scale-x {
+  0% {
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }
 
 .fa-check-circle {
@@ -181,11 +213,16 @@
 
 .menu_carte:hover .fa-check-circle {
   font-size: 30px;
-  -webkit-animation: rotate-center 1s ease-in-out both;
-          animation: rotate-center 1s ease-in-out both;
+  -webkit-animation: rotate-center 0.5s ease-in-out both;
+          animation: rotate-center 0.5s ease-in-out both;
   color: white;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.menu_carte:hover .menu_prix {
+  -webkit-animation: translate-x 200ms 0ms linear both;
+          animation: translate-x 200ms 0ms linear both;
 }
 
 @-webkit-keyframes rotate-center {
@@ -209,6 +246,35 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     color: white;
+  }
+}
+
+.menu_carte:hover .menu_carte_info {
+  -webkit-animation: reduction 200ms 0ms linear both;
+          animation: reduction 200ms 0ms linear both;
+}
+
+@-webkit-keyframes reduction {
+  0% {
+    width: 70%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes reduction {
+  0% {
+    width: 70%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 50%;
   }
 }
 
@@ -335,6 +401,36 @@
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes translate-x {
+  0% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+  }
+  50% {
+    -webkit-transform: translateX(-195%);
+            transform: translateX(-195%);
+  }
+  100% {
+    -webkit-transform: translateX(-195%);
+            transform: translateX(-195%);
+  }
+}
+
+@keyframes translate-x {
+  0% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+  }
+  50% {
+    -webkit-transform: translateX(-195%);
+            transform: translateX(-195%);
+  }
+  100% {
+    -webkit-transform: translateX(-195%);
+            transform: translateX(-195%);
   }
 }
 
@@ -927,8 +1023,12 @@ h2 {
 }
 
 .menu_carte_info {
-  text-overflow: ellipsis;
   margin-left: 0px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu_carte {
@@ -982,8 +1082,16 @@ h2 {
 
 .menu_text {
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.menu_text_info {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menu_prix {
@@ -997,13 +1105,8 @@ h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.menu_text_info {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .menu_plats {

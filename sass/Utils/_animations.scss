@@ -101,20 +101,34 @@
 .menu_slide {
     display: flex;
     position: absolute;
-    right: -200px;
+    right: 0px;
     width: 20%;
     height: 60px;
     background: rgb(120, 230, 220);
-    transition: 1s;
     justify-content: center;
     align-items: center;
+    transform: scale(0);
+    transform-origin: right;
     
 }
 
 .menu_carte:hover .menu_slide {
-    transition: 1s;
     right: 0;
-    
+    animation: scale-x 1s 0ms linear both;   
+}
+@keyframes scale-x{
+    0% {
+        -webkit-transform: scaleX(0.5);
+        transform: scaleX(0.5);
+    }
+    50%{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+}
 }
 .fa-check-circle{
     color: $color-white;
@@ -122,9 +136,13 @@
 
 .menu_carte:hover .fa-check-circle{
     font-size: 30px;     
-	animation: rotate-center 1s ease-in-out both;
+	animation: rotate-center 0.5s ease-in-out both;
     color: $color-white;  
     animation-fill-mode: forwards;
+    
+}
+.menu_carte:hover .menu_prix{
+    animation: translate-x 200ms 0ms linear both;
 }
 
   @keyframes rotate-center {
@@ -137,6 +155,21 @@
               transform: rotate(360deg);
               color: $color-white;
     }
+  }
+  .menu_carte:hover .menu_carte_info{
+      animation: reduction 200ms 0ms linear both;
+
+  }
+  @keyframes reduction{
+      0%{
+          width: 70%;
+      }
+      50%{
+          width: 50%;
+      }
+      100%{
+          width: 50%;
+      }
   }
 .menu_carte-delay1{
     
@@ -215,6 +248,18 @@
     100%{
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes translate-x{
+    0%{
+        transform: translateX(-120%);
+    }
+    50%{
+        transform: translateX(-195%);
+    }
+    100%{
+        transform: translateX(-195%);
     }
 }
 .menu_carte:hover .fa-check-circle{
