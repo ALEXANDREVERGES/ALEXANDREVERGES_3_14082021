@@ -27,7 +27,110 @@
        width: 32px;
        margin-top: 10px;
     }
+    .menu_all{
+        display: block;
+        column-count: 3;
+        height: 300px;
+    }
+    .menu_all-lanote{
+        display: block;
+        column-count: 3;
+    }
+    .menu{
+        height: auto;
+    }
+    .menu_titre_entrées{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_entrées::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;   
+    }
+    .menu_titre_plats{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_plats::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+          
+    }
+    .menu_titre_desserts{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_desserts::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;     
+    }
+    .menu_plats{
+        margin-bottom: 100px;
+    }
+    .menu_titre_entrées-lanote{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_entrées-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;   
+    }
+    .menu_titre_plats-lanote{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_plats-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+          
+    }
+    .menu_titre_desserts-lanote{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_desserts-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;     
+    }
+    .menu_prix{
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+}
  
    
     
-}

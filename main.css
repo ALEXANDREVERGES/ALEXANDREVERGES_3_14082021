@@ -1379,6 +1379,9 @@ footer {
     left: 0;
     bottom: 0;
   }
+  .menu_prix {
+    padding-right: 0;
+  }
 }
 
 @media screen and (min-width: 378px) and (max-width: 413px) {
@@ -1487,7 +1490,7 @@ footer {
         -ms-flex-align: end;
             align-items: flex-end;
     padding-left: 10px;
-    padding-right: 15px;
+    padding-right: 12px;
   }
 }
 
@@ -1581,7 +1584,55 @@ footer {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .fonction {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fonction_bouton {
+    width: 30%;
+    margin-left: 15px;
+  }
+  .restaurants {
+    height: 550px;
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .restaurants_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 97%;
+  }
+  .restaurants_carte {
+    width: 40%;
+    margin-right: 30px;
+  }
+  .restaurants_carte-icon {
+    position: static;
+    width: 32px;
+    margin-top: 10px;
+  }
+  .menu_prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
   .menu_all {
     display: block;
     -webkit-column-count: 3;
@@ -1689,44 +1740,7 @@ footer {
         -ms-flex-align: end;
             align-items: flex-end;
     padding-left: 10px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
-  .fonction {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .fonction_bouton {
-    width: 30%;
-    margin-left: 15px;
-  }
-  .restaurants {
-    height: 550px;
-    -webkit-column-count: 2;
-            column-count: 2;
-  }
-  .restaurants_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 97%;
-  }
-  .restaurants_carte {
-    width: 40%;
-    margin-right: 30px;
-  }
-  .restaurants_carte-icon {
-    position: static;
-    width: 32px;
-    margin-top: 10px;
+    padding-right: 0px;
   }
 }
 
@@ -1764,6 +1778,115 @@ footer {
     position: static;
     width: 32px;
     margin-top: 10px;
+  }
+  .menu_all {
+    display: block;
+    -webkit-column-count: 3;
+            column-count: 3;
+    height: 300px;
+  }
+  .menu_all-lanote {
+    display: block;
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  .menu {
+    height: auto;
+  }
+  .menu_titre_entrées {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .menu_titre_entrées::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+  .menu_titre_plats {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .menu_titre_plats::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .menu_titre_desserts {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .menu_titre_desserts::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .menu_plats {
+    margin-bottom: 100px;
+  }
+  .menu_titre_entrées-lanote {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .menu_titre_entrées-lanote::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+  .menu_titre_plats-lanote {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .menu_titre_plats-lanote::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .menu_titre_desserts-lanote {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .menu_titre_desserts-lanote::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .menu_prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 10px;
+    padding-right: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
