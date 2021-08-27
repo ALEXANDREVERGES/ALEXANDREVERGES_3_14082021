@@ -1331,6 +1331,12 @@ footer {
     left: 0;
     bottom: 0;
   }
+  .fonction_bouton_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 377px) {
@@ -1382,6 +1388,12 @@ footer {
   .menu_prix {
     padding-right: 0;
   }
+  .fonction_bouton_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 378px) and (max-width: 413px) {
@@ -1429,6 +1441,12 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+  .fonction_bouton_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
