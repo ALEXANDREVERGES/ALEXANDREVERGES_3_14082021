@@ -114,11 +114,30 @@
 .menu_carte:hover .menu_slide {
     transition: 1s;
     right: 0;
+    
 }
 .fa-check-circle{
-    font-size: 30px;
     color: $color-white;
 }
+
+.menu_carte:hover .fa-check-circle{
+    font-size: 30px;     
+	animation: rotate-center 0.6s ease-in-out both;
+    color: $color-white;  
+    animation-fill-mode: forwards;
+}
+
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+              color: $color-white;
+    }
+  }
 .menu_carte-delay1{
     
     animation: apparition 1s ;
