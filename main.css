@@ -181,8 +181,8 @@
 
 .menu_carte:hover .fa-check-circle {
   font-size: 30px;
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-          animation: rotate-center 0.6s ease-in-out both;
+  -webkit-animation: rotate-center 1s ease-in-out both;
+          animation: rotate-center 1s ease-in-out both;
   color: white;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
