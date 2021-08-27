@@ -2,26 +2,86 @@
     .menu_titre h1{
         font-size: 23px;
     }
+    .menu_titre_entrées{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
     .menu_titre_entrées::after{
-        display: none;      
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;   
     }
-    .menu_titre_entrées-lanote::after{
-        display: none;      
+    .menu_titre_plats{
+        position: relative;
+        padding-bottom: 0.5rem;
     }
-
     .menu_titre_plats::after{
-        display: none;         
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+          
     }
-    .menu_titre_plats-lanote::after{
-        display: none;         
+    .menu_titre_desserts-lanote{
+        position: relative;
+        padding-bottom: 0.5rem;
     }
     .menu_titre_desserts::after{
-        display: none;
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;     
+    }
+   
+    .menu_titre_entrées-lanote{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_entrées-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;   
+    }
+    .menu_titre_plats-lanote{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+    .menu_titre_plats-lanote::after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
           
     }
+    .menu_titre_desserts-lanote{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
     .menu_titre_desserts-lanote::after{
-        display: none;
-          
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;     
     }
     
 }
@@ -34,44 +94,36 @@
             font-size: 20px;
         }
     }
+    .menu_titre_entrées{
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
     .menu_titre_entrées::after{
         content: "";
         width: 3rem;
         height: .25rem;
         background-color: #99e2d0;
         position: absolute;
-        left: 20px;
-        bottom: 1050px;   
+        left: 0px;
+        bottom: 0px;   
     }
-    .menu_titre_entrées-lanote::after{
-        content: "";
-        width: 3rem;
-        height: .25rem;
-        background-color: #99e2d0;
-        position: absolute;
-        left: 20px;
-        bottom: 1130px;   
+    .menu_titre_plats{
+        position: relative;
+        padding-bottom: 0.5rem;
     }
-
     .menu_titre_plats::after{
         content: "";
         width: 3rem;
         height: .25rem;
         background-color: #99e2d0;
         position: absolute;
-        left: 20px;
-        bottom: 745px;
+        left: 0;
+        bottom: 0;
           
     }
-    .menu_titre_plats-lanote::after{
-        content: "";
-        width: 3rem;
-        height: .25rem;
-        background-color: #99e2d0;
-        position: absolute;
-        left: 20px;
-        bottom: 745px;
-          
+    .menu_titre_desserts{
+        position: relative;
+        padding-bottom: 0.5rem;
     }
     .menu_titre_desserts::after{
         content: "";
@@ -79,18 +131,10 @@
         height: .25rem;
         background-color: #99e2d0;
         position: absolute;
-        left: 20px;
-        bottom: 445px;     
+        left: 0;
+        bottom: 0;     
     }
-    .menu_titre_desserts-lanote::after{
-        content: "";
-        width: 3rem;
-        height: .25rem;
-        background-color: #99e2d0;
-        position: absolute;
-        left: 20px;
-        bottom: 440px;     
-    }
+    
 }
 @media screen and (min-width: 378px) and (max-width: 413px){
     .menu_lanote{
@@ -100,34 +144,10 @@
     }
     .menu_titre h1{
         font-size: 23px;
-    }
-    .menu_titre_entrées-lanote::after{
-        content: "";
-        width: 3rem;
-        height: .25rem;
-        background-color: #99e2d0;
-        position: absolute;
-        left: 20px;
-        bottom: 1110px;   
-    }
-    .menu_titre_plats-lanote::after{
-        content: "";
-        width: 3rem;
-        height: .25rem;
-        background-color: #99e2d0;
-        position: absolute;
-        left: 20px;
-        bottom: 725px;
-          
-    }
-    .menu_titre_desserts-lanote::after{
-        content: "";
-        width: 3rem;
-        height: .25rem;
-        background-color: #99e2d0;
-        position: absolute;
-        left: 20px;
-        bottom: 420px;     
+    }    
+    .menu_titre_entrées{
+        position: relative;
+        padding-bottom: 0.5rem;
     }
     .menu_titre_entrées::after{
         content: "";
@@ -135,8 +155,12 @@
         height: .25rem;
         background-color: #99e2d0;
         position: absolute;
-        left: 20px;
-        bottom: 1050px;   
+        left: 0px;
+        bottom: 0px;   
+    }
+    .menu_titre_plats{
+        position: relative;
+        padding-bottom: 0.5rem;
     }
     .menu_titre_plats::after{
         content: "";
@@ -144,9 +168,13 @@
         height: .25rem;
         background-color: #99e2d0;
         position: absolute;
-        left: 20px;
-        bottom: 745px;
+        left: 0;
+        bottom: 0;
           
+    }
+    .menu_titre_desserts{
+        position: relative;
+        padding-bottom: 0.5rem;
     }
     .menu_titre_desserts::after{
         content: "";
@@ -154,8 +182,8 @@
         height: .25rem;
         background-color: #99e2d0;
         position: absolute;
-        left: 20px;
-        bottom: 445px;     
+        left: 0;
+        bottom: 0;     
     }
    
 
