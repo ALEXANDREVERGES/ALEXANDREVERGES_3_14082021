@@ -86,6 +86,9 @@
     .fonction_bouton_container{
         flex-direction: column;
     }
+    .menu_lanote{
+        height: 1300px;
+    }
   
     
 }
@@ -186,6 +189,10 @@
         top: 20px;
         bottom: 0;     
     }
+    .menu_lanote{
+        height: 1300px;
+    }
+    
     
 }
 @media screen and (min-width: 378px) and (max-width: 413px){
@@ -266,6 +273,9 @@
         position: absolute;
         left: 0;
         bottom: 0;     
+    }
+    .menu_lanote{
+        height: 1300px;
     }
 
    

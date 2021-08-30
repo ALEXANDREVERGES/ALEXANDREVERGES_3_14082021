@@ -1337,6 +1337,9 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .menu_lanote {
+    height: 1300px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 377px) {
@@ -1435,6 +1438,9 @@ footer {
     top: 20px;
     bottom: 0;
   }
+  .menu_lanote {
+    height: 1300px;
+  }
 }
 
 @media screen and (min-width: 378px) and (max-width: 413px) {
@@ -1515,6 +1521,9 @@ footer {
     left: 0;
     bottom: 0;
   }
+  .menu_lanote {
+    height: 1300px;
+  }
 }
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
@@ -1576,6 +1585,9 @@ footer {
             align-items: flex-end;
     padding-left: 10px;
     padding-right: 12px;
+  }
+  .menu_lanote {
+    height: 1300px;
   }
 }
 
@@ -1666,6 +1678,9 @@ footer {
             align-items: flex-end;
     padding-left: 10px;
     padding-right: 30px;
+  }
+  .menu_lanote {
+    height: 1250px;
   }
 }
 
@@ -1826,6 +1841,9 @@ footer {
             align-items: flex-end;
     padding-left: 10px;
     padding-right: 0px;
+  }
+  .menu_lanote {
+    height: 700px;
   }
 }
 
