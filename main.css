@@ -168,11 +168,6 @@
           animation-fill-mode: forwards;
 }
 
-.menu_carte:hover .menu_prix {
-  -webkit-animation: translate-x 200ms 0ms linear both;
-          animation: translate-x 200ms 0ms linear both;
-}
-
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -194,6 +189,41 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     color: white;
+  }
+}
+
+.menu_carte:hover .menu_prix {
+  -webkit-animation: translate-x 200ms 0ms linear both;
+          animation: translate-x 200ms 0ms linear both;
+}
+
+@-webkit-keyframes translate-x {
+  0% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+  }
+  50% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+  100% {
+    -webkit-transform: translateX(-195%);
+            transform: translateX(-195%);
+  }
+}
+
+@keyframes translate-x {
+  0% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+  }
+  50% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+  100% {
+    -webkit-transform: translateX(-195%);
+            transform: translateX(-195%);
   }
 }
 
@@ -352,36 +382,6 @@
   }
 }
 
-@-webkit-keyframes translate-x {
-  0% {
-    -webkit-transform: translateX(-120%);
-            transform: translateX(-120%);
-  }
-  50% {
-    -webkit-transform: translateX(-150%);
-            transform: translateX(-150%);
-  }
-  100% {
-    -webkit-transform: translateX(-195%);
-            transform: translateX(-195%);
-  }
-}
-
-@keyframes translate-x {
-  0% {
-    -webkit-transform: translateX(-120%);
-            transform: translateX(-120%);
-  }
-  50% {
-    -webkit-transform: translateX(-150%);
-            transform: translateX(-150%);
-  }
-  100% {
-    -webkit-transform: translateX(-195%);
-            transform: translateX(-195%);
-  }
-}
-
 .container .icon path {
   fill: white;
   stroke: black;
@@ -468,28 +468,6 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-footer {
-  color: white;
-  background-color: #252525;
-  height: 180px;
-  padding-top: 30px;
-}
-
-.foot {
-  margin-left: 20px;
-  margin-top: -20px;
-}
-
-.foot h3 {
-  font-family: "Shrikhand", cursive;
-}
-
-.foot_text {
-  margin-bottom: 10px;
-  color: white;
-  text-decoration: none;
 }
 
 .fa-utensils {
@@ -715,8 +693,6 @@ footer {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-animation: loader .01s;
           animation: loader .01s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
   -webkit-animation-fill-mode: both;
@@ -844,29 +820,6 @@ header {
           justify-content: center;
   height: 100px;
   padding-top: 30px;
-}
-
-.reservation_search_bouton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 30px;
-  font-weight: bold;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  width: 250px;
-  height: 50px;
-  color: white;
-  background: #9b59dc;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9b59dc), color-stop(85%, #ff79da));
-  background: linear-gradient(0deg, #9b59dc 0%, #ff79da 85%);
-  -webkit-box-shadow: 4px 8px 12px 4px rgba(0, 0, 0, 0.26);
-  box-shadow: 4px 8px 12px 4px rgba(0, 0, 0, 0.26);
 }
 
 .header_menu {

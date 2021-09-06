@@ -97,11 +97,7 @@
     animation-fill-mode: forwards;
     
 }
-.menu_carte:hover .menu_prix{
-    animation: translate-x 200ms 0ms linear both;
-}
-
-  @keyframes rotate-center {
+@keyframes rotate-center {
     0% {
       -webkit-transform: rotate(0);
               transform: rotate(0);
@@ -112,6 +108,22 @@
               color: $color-white;
     }
   }
+.menu_carte:hover .menu_prix{
+    animation: translate-x 200ms 0ms linear both;
+}
+@keyframes translate-x{
+    0%{
+        transform: translateX(-120%);
+    }
+    50%{
+        transform: translateX(-150%);
+    }
+    100%{
+        transform: translateX(-195%);
+    }
+}
+
+ 
   .menu_carte:hover .menu_carte_info{
       animation: reduction 200ms 0ms linear both;
 
@@ -207,15 +219,5 @@
     }
 }
 
-@keyframes translate-x{
-    0%{
-        transform: translateX(-120%);
-    }
-    50%{
-        transform: translateX(-150%);
-    }
-    100%{
-        transform: translateX(-195%);
-    }
-}
+
 
