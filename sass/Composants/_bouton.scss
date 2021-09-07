@@ -24,21 +24,10 @@
     cursor: pointer;
     opacity: 0.8;
     box-shadow: none;
-    background: rgb(155,89,220);
-    background: linear-gradient(0deg, rgba(155,89,220,1) 0%, rgba(255,121,218,1) 85%);
+    opacity: 0.7;
     border: none;
-    color: white;
-    .fa-mobile-alt{
-        color: white;
-    }
-    .fa-list{
-        color: white;
-    }
-    .fa-store{
-        color: white;
-    }
-    .fonction_bouton_numero{
-        background-color: black;
+    color: black;
+    .fonction_bouton_numero{    
         color: $color-white;
         
     }
