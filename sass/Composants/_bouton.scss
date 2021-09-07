@@ -24,12 +24,11 @@
     cursor: pointer;
     opacity: 0.8;
     box-shadow: none;
-    opacity: 0.7;
     border: none;
     color: black;
+    background-color: rgba(147,86,220,0.2);
     .fonction_bouton_numero{    
-        color: $color-white;
-        
+        color: $color-white;     
     }
 }
 .fonction_bouton_container{
