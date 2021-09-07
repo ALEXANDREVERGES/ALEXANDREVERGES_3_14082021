@@ -515,7 +515,7 @@ body {
           box-shadow: none;
   border: none;
   color: black;
-  background-color: rgba(147, 86, 220, 0.2);
+  background-color: rgba(147, 86, 220, 0.1);
 }
 
 .fonction_bouton:hover .fonction_bouton_numero {
@@ -1283,6 +1283,9 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 377px) {
   .menu_titre h1 {
     font-size: 23px;
+  }
+  .menu {
+    height: 1200px;
   }
   .menu_lanote .menu_titre h1 {
     font-size: 20px;
